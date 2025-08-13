@@ -2,12 +2,11 @@
     "name": "selenium-mocha-digtal-skola",
     "version": "1.0.0",
     "descripton": "selenium webDriver tests using mocha with mochawesome reports",
+    "type": "module",
     "scripts": {
-        "test": "mocha test/sesi-10/test-sauce10.js --recursive --timeout 60000 --reporter mochawesome",
+        "test": "mocha test/sesi-11/test_sauce11.js --recursive --timeout 60000 --reporter mochawesome",
         "test1": "mocha test/sesi-9/test-sauce.js --recursive --timeout 60000 --reporter mocha-simple-html-reporter --reporter-option output=sesi-9.html",
         "test2": "mocha test/sesi-9/test-sauce.js --recursive --timeout 60000"
-
-
     },
     "dependencies": {
         "selenium-webdriver": "^4.34.0"
@@ -15,6 +14,8 @@
     "devDependencies": {
         "mocha": "^10.4.0",
         "mocha-simple-html-reporter": "^2.0.0",
-        "mochawesome": "^7.1.3"
+        "mochawesome": "^7.1.3",
+        "pixelmatch": "^7.1.0",
+        "pngjs": "^7.0.0"
     }
 }
